@@ -33,8 +33,8 @@ public class GUIUtils {
 			@Override
 			public void onAnimationEnd(Animator animation) {
 				super.onAnimationEnd(animation);
-				listener.onRevealHide();
 				view.setVisibility(View.INVISIBLE);
+				listener.onRevealHide();
 			}
 		});
 		anim.setDuration(ctx.getResources().getInteger(R.integer.animation_duration));
